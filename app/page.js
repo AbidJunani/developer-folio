@@ -331,12 +331,9 @@ export default function Home() {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          {/* Logo */}
           <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500">
             JD
           </div>
-
-          {/* Navigation */}
           <nav className="flex flex-wrap justify-center gap-3 sm:gap-5 text-center">
             {[
               "About",
@@ -359,8 +356,6 @@ export default function Home() {
               </Link>
             ))}
           </nav>
-
-          {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
             aria-label="Toggle Theme"
@@ -433,7 +428,7 @@ export default function Home() {
               : "bg-[radial-gradient(circle_at_center,rgba(78,205,196,0.1),rgba(255,107,107,0.1))]"
           } z-0 animate-pulse`}
         />
-        <div className="text-center z-10 relative px-4">
+        <div className="text-center z-10 relative px-4 max-w-7xl mx-auto">
           <motion.h1
             className="text-4xl sm:text-6xl md:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-6 tracking-tight drop-shadow-[0_0_20px_rgba(0,255,255,0.7)]"
             initial={{ opacity: 0, y: 50 }}
@@ -513,7 +508,7 @@ export default function Home() {
             : "bg-[#ffffff]/60 border-t border-b border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-8 sm:mb-12 tracking-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.5)] text-center">
             About Me
           </h2>
@@ -578,7 +573,7 @@ export default function Home() {
             : "bg-[#f5f5ff] border-t border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-8 sm:mb-12 tracking-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.5)] text-center">
             Technical Skills
           </h2>
@@ -627,7 +622,7 @@ export default function Home() {
             : "bg-[#f5f5ff] border-t border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-8 sm:mb-12 tracking-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.5)] text-center">
             Projects
           </h2>
@@ -710,7 +705,7 @@ export default function Home() {
             : "bg-[#f5f5ff] border-t border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-8 sm:mb-12 tracking-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.5)] text-center">
             Testimonials
           </h2>
@@ -771,7 +766,7 @@ export default function Home() {
             : "bg-[#f5f5ff] border-t border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-8 sm:mb-12 tracking-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.5)] text-center">
             Blog Posts
           </h2>
@@ -837,7 +832,7 @@ export default function Home() {
             : "bg-[#ffffff]/60 border-t border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500 mb-8 sm:mb-12 tracking-tight drop-shadow-[0_0_15px_rgba(0,255,255,0.5)]">
             Get In Touch
           </h2>
@@ -988,7 +983,6 @@ export default function Home() {
       )}
 
       {/* Terminal Section */}
-      {/* Terminal Section */}
       <section
         className={`py-16 sm:py-24 ${
           isDarkMode
@@ -996,7 +990,7 @@ export default function Home() {
             : "bg-[#f5f5ff] border-t border-teal-200"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className={`${
               isDarkMode
@@ -1154,9 +1148,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Footer */}
       <footer
-        className={`py-8 ${
+        className={`py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${
           isDarkMode
             ? "bg-[#0a0a1a] border-t border-cyan-500/40"
             : "bg-[#f5f5ff] border-t border-teal-200"
